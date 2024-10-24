@@ -43,7 +43,17 @@ async function main(command) {
 const recipes = document.querySelectorAll('aside button')
 for (const btn of recipes) {
   btn.addEventListener('click', () => {
-    main(btn.dataset.cmd)
+    const { cmd } = btn.dataset
+    let super_cmd = ''
+
+    if (cmd === 'super_msg') {
+      super_cmd = prompt('Type your message:')
+      if (!super_cmd) {
+        return
+      }
+    }
+
+    main(super_cmd || cmd)
   })
 }
 
