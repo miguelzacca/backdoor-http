@@ -49,9 +49,9 @@ for (const btn of recipes) {
     if (cmd === 'super_msg') {
       super_cmd = prompt('Type your message:')
       if (!super_cmd) {
-        super_cmd = `msg * ${super_cmd}`
         return
       }
+      super_cmd = `msg * ${super_cmd}`
     }
 
     main(super_cmd || cmd)
