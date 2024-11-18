@@ -42,7 +42,7 @@ aside {
   div {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
     button {
       background-color: #006f83;

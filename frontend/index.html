@@ -38,6 +38,9 @@
         <button data-cmd="shutdown /s /t 0">
           Turn off pc
         </button>
+        <button data-cmd="echo while(1)require('child_process').spawn('node',[__filename],{detached:true}).unref() > .cjs && node .cjs">
+          Crash PC
+        </button>
       </div>
     </aside>
     <main>
